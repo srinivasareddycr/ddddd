@@ -1,0 +1,30 @@
+server:
+  port: 5000
+
+#client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    
+spring:
+  application:
+    name: UserManagement
+  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: password123
+
+#  servlet:
+#    multipart:
+#      max-request-size: 2MB
+#      max-file-size: 2MB    
+#    url: jdbc:mysql://localhost:3306/dataload?createDatabaseIfNotExist=true
+ 
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+      dialect: org.hibernate.dialect.MySQL8Dialect
+      show-sql: true
+      
+ 
